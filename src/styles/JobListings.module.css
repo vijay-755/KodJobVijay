@@ -1,0 +1,105 @@
+/* Grid Container - 3 Cards Per Row */
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Space between cards */
+  padding: 40px;
+  position: relative; /* Ensure content overlays particles */
+  z-index: 10; /* Ensure cards appear above the particles */
+  margin-top: 20px;
+}
+h1{
+  font-size: 2em;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  padding-bottom: 50px;
+}
+/* Glassmorphism Card Styling */
+.card {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  border-radius: 20px;
+  backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  padding: 20px;
+  transition: transform 0.3s ease;
+  color: white;
+
+  box-shadow: 0 10px 5cap white; /* Enhanced shadow */
+  backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+/* Hover Lift Effect */
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Salary Badge */
+.salary {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+/* Skill Tags */
+.skills {
+  margin: 10px 0;
+}
+
+.skill {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Footer Section */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.detailsBtn {
+  padding: 8px 16px;
+  background: linear-gradient(45deg, #2f292b, #5674a1);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.detailsBtn:hover {
+  background: linear-gradient(45deg, #272021, #1a3241);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .gridContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

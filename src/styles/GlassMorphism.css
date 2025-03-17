@@ -1,0 +1,291 @@
+/* Main Authentication Container */
+.auth-container {
+    display: flex;
+    height: 80vh;   
+    margin-top: 40px;
+    background: linear-gradient(135deg, #1e1e2f, #252542); /* Smooth gradient background */
+  }
+  
+  /* Left Image Section */
+  .image-section {
+   display: flex;
+   flex: start;
+   justify-self: start;
+    height: 650px;
+    width: 75%;
+    color: aliceblue;
+    background-image: url("https://assets.ccbp.in/frontend/react-js/home-lg-bg.png");
+    background-size: cover;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+  
+  .auth-image {
+    width: 950px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6); /* Deeper shadow for better depth */
+  }
+  
+  /* Right Form Section */
+  .form-section {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  /* Enhanced shadow */
+    
+  }
+  h1{
+    color: rgb(188, 171, 223);
+    font-size: 50px; /* Larger heading */
+    text-align: center;
+    font-weight: bold;
+  }
+  h3{
+    color: wheat;
+    font-size: 30px;
+
+  }
+  .text{
+    padding-left: 40px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+  }
+  /* Glassmorphism Form */
+  .glassmorphism {
+   
+    border-radius: 16px;
+    box-shadow: 0 10px 5cap white; /* Enhanced shadow */
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(15px);
+   background: transparent;
+   display: flex;
+   flex-direction: row;
+ width:85vw;
+   height: 650px;
+   margin-left: 130px;
+  
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 0 10px 5cap white; /* Enhanced shadow */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(15px);
+    animation: fadeIn 0.6s ease-in-out; /* Smooth fade-in animation */
+  }
+  
+  /* Form Layout */
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    gap: 10px; /* Improved spacing */
+  }
+  .form-section{
+    padding-left: 120px;
+  
+  }
+  /* Form Heading */
+  .auth-form h2 {
+    color: white;
+    text-align: center;
+    font-size: 35px; /* Slightly larger heading */
+  }
+  
+  /* Input Fields */
+  .auth-form input {
+   
+    border: none;
+    width: 250px;
+    height: 37px;
+    padding: 0.3rem;
+    
+    border-radius: 12px; /* Smoother rounded corners */
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2); /* Light glass effect */
+    color: white;
+    outline: none;
+    transition: background 0.3s ease; /* Smooth background transition */
+  }
+  
+  /* Input Placeholder Styling */
+  .auth-form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  /* Input Focus Effect */
+  .auth-form input:focus {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Submit Button */
+  .auth-form button {
+    width: 260px;
+    height: 48px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #8b95de, #8d6fbc); /* Gradient effect */
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s; /* Hover animation */
+  }
+  
+  /* Button Hover Animation */
+  .auth-form button:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  /* Link Text */
+  .auth-form p {
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px; /* Better spacing */
+  }
+  
+  /* Hover Effect for Links */
+  .auth-form p:hover {
+    text-decoration: underline; /* Visual feedback */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 900px) {
+    .auth-container {
+      flex-direction: column; /* Stack sections vertically */
+    }
+  
+    .image-section {
+      display: none; /* Hide image on smaller screens */
+    }
+  
+    .form-section {
+      width: 100%;
+    }
+  }
+  
+  /* Smooth Fade-In Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Initial upward motion */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* src/styles/GlassMorphism.css */
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e1e2f, #252542);
+  }
+  
+  .glass-form {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(15px);
+    max-width: 400px;
+    width: 100%;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .glass-form h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .glass-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+  }
+  
+  .glass-form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #4caf50, #45a049);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .glass-form p {
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .glass-form p:hover {
+    text-decoration: underline;
+  }
+  
+  /* Smooth Fade-In */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  span{
+    color: #c1c1f3;
+    font-size: 40px;
+   
+  }
+.form-section2{
+  align-items: center;
+  text-align: center;
+  background: rgba(228, 223, 229, 0.1);
+  width: 500px;
+  height: 540px;
+  border-radius: 40px;
+  margin-left: 450px;
+
+  box-shadow: 0 10px 5cap white; /* Enhanced shadow */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  margin-top: 100px;
+  padding: 10px;
+}
+.glassmorphism2{
+   
+   /* Enhanced shadow */
+  margin: 160px;
+
+width: 0px;
+
+  animation: fadeIn 0.6s ease-in-out; /* Smooth fade-in animation */
+}
+.text2{
+  color: #dcdce5;
+}
+.text3{
+  color: #dcdce5;
+  font-size: 35px;
+}
+.p{
+  padding-left: 220px;
+  font-size: 20px;
+}

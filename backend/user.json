@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "username": "Vijay",
+    "number": "712396902602",
+    "dob": "2003-10-02",
+    "age": 21,
+    "email": "vijaykankala712355@gmail.com",
+    "password": "Vijay!1212334"
+  },
+  {
+    "id": 2,
+    "username": "Vijay Kankala1",
+    "number": "739691234",
+    "dob": "2003-02-07",
+    "age": 22,
+    "email": "vijaykankala75wd5@gmail.com",
+    "password": "Vijay!@#1234"
+  },
+  {
+    "id": 2,
+    "username": "Vijay Kankala2",
+    "number": "73969123w4",
+    "dob": "2005-02-07",
+    "age": 20,
+    "email": "vijaykankala75wqwsd5@gmail.com",
+    "password": "Vijay23!@#1234"
+  },
+  {
+    "id": 4,
+    "username": "Vijay Kankala",
+    "number": "07396902602",
+    "dob": "2025-02-26",
+    "age": 0,
+    "email": "vijaykankala755@gmail.com",
+    "password": "admin"
+  },
+  {
+    "id": 5,
+    "username": "Vijay Kankala",
+    "number": "07396902602",
+    "dob": "2025-02-25",
+    "age": 0,
+    "email": "vijaykankala7qw55@gmail.com",
+    "password": "admion"
+  }
+]

@@ -1,0 +1,72 @@
+/* src/index.css */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Send it to the background */
+}
+
+.overlay, .overlay_one {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  color: white;
+}
+
+.logoImg {
+  height: 80px;
+  width: 80px;
+}
+
+.navAli ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.navAli ul li a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.fade-in-image {
+  animation: fadeIn 6s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#title {
+  animation: fadeIn 8s;
+  font-size: 3rem;
+}
+
+#launching-soon {
+  animation: fadeIn 12s;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
